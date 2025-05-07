@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/resume-website/static/js/main.e7fb1320.js",
+    "index.html": "/resume-website/index.html",
+    "main.e7fb1320.js.map": "/resume-website/static/js/main.e7fb1320.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.e7fb1320.js"
+  ]
+}
