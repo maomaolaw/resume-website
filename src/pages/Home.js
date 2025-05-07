@@ -194,18 +194,18 @@ const Home = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          牧羊人
+          毛梦
         </Name>
         <Title
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
         >
-          全栈开发工程师
+          全栈开发工程师 / 技术专家
         </Title>
         <SocialLinks>
           <SocialIcon
-            href="https://github.com"
+            href="https://github.com/maomaolaw"
             target="_blank"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
@@ -213,15 +213,7 @@ const Home = () => {
             <FaGithub />
           </SocialIcon>
           <SocialIcon
-            href="https://linkedin.com"
-            target="_blank"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <FaLinkedin />
-          </SocialIcon>
-          <SocialIcon
-            href="mailto:example@email.com"
+            href="mailto:maomaolaw@example.com"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -236,7 +228,7 @@ const Home = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
         >
-          <StatNumber>5+</StatNumber>
+          <StatNumber>8+</StatNumber>
           <StatLabel>年开发经验</StatLabel>
         </StatItem>
         <StatItem
@@ -244,7 +236,7 @@ const Home = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
         >
-          <StatNumber>50+</StatNumber>
+          <StatNumber>30+</StatNumber>
           <StatLabel>项目经验</StatLabel>
         </StatItem>
         <StatItem
@@ -264,11 +256,10 @@ const Home = () => {
       >
         <SectionTitle>关于我</SectionTitle>
         <motion.p variants={itemVariants}>
-          我是一名充满热情的全栈开发工程师，拥有5年的开发经验。
-          专注于构建高性能、可扩展的Web应用程序。
-          热爱学习新技术，善于解决复杂问题。
-          在过去的项目中，我成功带领团队完成了多个重要项目，
-          并在性能优化和用户体验方面取得了显著成果。
+          我是一名经验丰富的全栈开发工程师，专注于构建高性能、可扩展的Web应用程序。
+          在过去8年的职业生涯中，我积累了丰富的项目经验，特别擅长前端开发和系统架构设计。
+          我热爱技术，持续学习，善于解决复杂问题，并注重代码质量和用户体验。
+          在团队协作中，我注重沟通效率，善于分享知识，帮助团队成员共同成长。
         </motion.p>
       </Section>
 
@@ -279,23 +270,36 @@ const Home = () => {
       >
         <SectionTitle>工作经验</SectionTitle>
         <ExperienceItem variants={itemVariants}>
-          <ExperienceTitle>高级开发工程师 - ABC科技有限公司</ExperienceTitle>
-          <ExperienceDate>2020年 - 至今</ExperienceDate>
+          <ExperienceTitle>技术专家 - 某知名互联网公司</ExperienceTitle>
+          <ExperienceDate>2021年 - 至今</ExperienceDate>
           <ExperienceDescription>
-            • 负责公司核心产品的架构设计和开发
-            • 带领5人开发团队，提高团队开发效率30%
-            • 优化系统性能，使页面加载速度提升50%
-            • 引入新技术栈，提升开发效率和代码质量
+            • 负责公司核心业务系统的架构设计和开发，带领10人技术团队
+            • 设计并实现微服务架构，提升系统可扩展性和可维护性
+            • 优化系统性能，使页面加载速度提升60%，服务器响应时间减少40%
+            • 推动技术栈升级，引入React 18、TypeScript等新技术
+            • 建立完善的CI/CD流程，实现自动化部署和测试
           </ExperienceDescription>
         </ExperienceItem>
         <ExperienceItem variants={itemVariants}>
-          <ExperienceTitle>全栈开发工程师 - XYZ互联网公司</ExperienceTitle>
-          <ExperienceDate>2018年 - 2020年</ExperienceDate>
+          <ExperienceTitle>高级开发工程师 - 某科技公司</ExperienceTitle>
+          <ExperienceDate>2018年 - 2021年</ExperienceDate>
           <ExperienceDescription>
-            • 参与电商平台的前后端开发
-            • 实现复杂的业务逻辑和数据处理
-            • 优化数据库查询性能
-            • 开发自动化测试脚本
+            • 负责电商平台的前后端开发，实现复杂的业务逻辑
+            • 设计并实现高并发订单处理系统，支持每秒1000+订单处理
+            • 优化数据库查询性能，减少查询时间80%
+            • 开发自动化测试框架，提高测试覆盖率至85%
+            • 指导初级开发人员，组织技术分享会
+          </ExperienceDescription>
+        </ExperienceItem>
+        <ExperienceItem variants={itemVariants}>
+          <ExperienceTitle>全栈开发工程师 - 某创业公司</ExperienceTitle>
+          <ExperienceDate>2015年 - 2018年</ExperienceDate>
+          <ExperienceDescription>
+            • 参与公司核心产品的全栈开发
+            • 实现响应式设计，确保产品在移动端和桌面端都有良好体验
+            • 开发RESTful API，实现前后端分离架构
+            • 使用Docker容器化部署，提高开发和生产环境的一致性
+            • 参与产品需求分析和技术方案设计
           </ExperienceDescription>
         </ExperienceItem>
       </Section>
@@ -319,13 +323,6 @@ const Home = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <FaServer /> Node.js
-          </Skill>
-          <Skill
-            variants={itemVariants}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
             <FaCode /> TypeScript
           </Skill>
           <Skill
@@ -333,7 +330,14 @@ const Home = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <FaCode /> Python
+            <FaServer /> Node.js
+          </Skill>
+          <Skill
+            variants={itemVariants}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <FaCode /> Vue.js
           </Skill>
           <Skill
             variants={itemVariants}
@@ -347,7 +351,14 @@ const Home = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <FaServer /> AWS
+            <FaServer /> Kubernetes
+          </Skill>
+          <Skill
+            variants={itemVariants}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <FaDatabase /> MySQL
           </Skill>
           <Skill
             variants={itemVariants}
@@ -362,6 +373,27 @@ const Home = () => {
             whileTap={{ scale: 0.95 }}
           >
             <FaCode /> Git
+          </Skill>
+          <Skill
+            variants={itemVariants}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <FaServer /> AWS
+          </Skill>
+          <Skill
+            variants={itemVariants}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <FaCode /> Jest
+          </Skill>
+          <Skill
+            variants={itemVariants}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <FaCode /> Webpack
           </Skill>
         </SkillsContainer>
       </Section>
